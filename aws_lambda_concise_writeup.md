@@ -7,6 +7,21 @@ entire article and don’t skip to parts you are interested in right now.
 
 We will mostly use Python as our example. Other languages work similarly.
 
+# Table of content
+
+1. [Overview](#overview)
+2. [What can it do](#what-can-it-do)
+3. [How to call](#how-to-call)
+4. [Configuring](#configuring)
+5. [Cold and warm start](#cold-and-warm-start)
+6. [Pricing](#pricing)
+7. [Parallelism](#parallelism)
+8. [Layers](#layers)
+9. [Versioning](#versioning)
+10. [Using containers](#using-containers)
+11. [Limits](#limits)
+12. [Under the hood](#under-the-hood)
+
 # Overview
 
 Lambda is a piece of program code that runs “nowhere”. You don’t need to
