@@ -262,6 +262,10 @@ not for the startup time. This, until your startup time exceeds ten seconds,
 in which case you will be billed for that too. This is another good reason to
 move as much code to the initialization part as possible.
 
+On top if this, you also pay for network traffic out from the AWS network to
+the internet. It is typically negligible, but keep in mind if you upload a
+large amount of data somewhere.
+
 To calculate quickly in head, you should consider the second term, which
 typically dominates the cost. Estimate the average execution time, multiplied
 by the memory setting in gigabytes, and you get 60,000 of these for a dollar.
