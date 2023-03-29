@@ -386,6 +386,15 @@ There are a number of limitations to your function size, etc, which we are
 not going to list here, just include the link to the
 [documentation](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
 
+If you need larger files than you are allowed to upload, you can download
+them from s3 from within the function code. For example, you can download
+database files, machine learning models or binaries. S3 is pretty fast,
+you can easily download several hundred megabytes within a second or two.
+Of course, you would put the download code in the initialization part.
+
+You can also pull files from the internet. Use the `urllib3` Python module,
+as `curl` and `wget` are not available.
+
 # Under the hood
 
 This is not a complete description, just the gist of it. More details are
