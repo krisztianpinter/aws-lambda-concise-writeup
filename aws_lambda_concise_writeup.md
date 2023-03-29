@@ -395,6 +395,13 @@ Of course, you would put the download code in the initialization part.
 You can also pull files from the internet. Use the `urllib3` Python module,
 as `curl` and `wget` are not available.
 
+If you exceed the maximum runtime of 15 minutes, you'll need to look for a
+different solution. You can consider
+[ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html),
+[AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)
+or [Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)
+instead.
+
 # Under the hood
 
 This is not a complete description, just the gist of it. More details are
