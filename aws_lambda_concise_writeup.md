@@ -330,10 +330,10 @@ won't affect the functions.
 Layers will also not bypass deployment size limitations. The combined package
 size, layers plus lambda, must be below the limit.
 
-Layers’ content will be placed in the /opt directory. If you include Python
-modules in a layer, place them in a subdirectory named `python`, because the
-Python in Lambda will look for modules in the `/opt/python` directory, but not
-in the `/opt` directory.
+Layers’ content will be placed in the `/opt` directory (note that Lambda runs
+on linux). If you include Python modules in a layer, place them in a
+subdirectory named `python`, because the Python in Lambda will look for modules
+in the `/opt/python` directory, but not in the `/opt` directory.
 
 # Versioning
 
