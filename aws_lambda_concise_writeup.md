@@ -458,10 +458,6 @@ in the application startup will be too late by the time you get a chance. Or
 an error reporting tool that catches unhandled exceptions will never catch
 anything, because the RIC will catch all exceptions.
 
-The RIC will also set up logging, which means that you can’t change the
-logging configuration. You can use the logging module though to write to
-CloudWatch logs.
-
 Thirdly, you can actually do work between Lambda invokations. If you start
 some background process, for example using threads, or spawned processes, it
 will not be immediately interrupted upon returning. You can prefetch or
